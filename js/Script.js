@@ -19,12 +19,24 @@ function onNumClick(value) {
 }
 
 function onOprationClick (value) {
-    value = value.toString();
-    operPressed = true;
-    operation = value;
-    let privousValue = screen.innerHTML.toString();
-    screen.innerHTML = privousValue + value;
-    console.log(value,operPressed);
+    if(operPressed === false){
+        value = value.toString();
+        operPressed = true;
+        operation = value;
+        let privousValue = screen.innerHTML.toString();
+        screen.innerHTML = privousValue + value;
+        console.log(value,operPressed);
+    }
+    else{
+        value = value.toString();
+        console.log('else', value);
+        operPressed = true;
+        operation = value;
+        let privousValue = screen.innerHTML.toString();
+        const newPrivousValue = privousValue.substring(0,privousValue.length-1);
+        screen.innerHTML = newPrivousValue + value;
+        console.log(value,operPressed);
+     }
 }
 
 function totalValue (){
