@@ -11,7 +11,8 @@ function onNumClick(value) {
     if(operPressed){
         value2 = value2 + value;
         screen.innerHTML =value1 + operation + value2;
-    }else{
+    }
+    else{
         value1 = value1 + value;
         screen.innerHTML = value1;
     }
