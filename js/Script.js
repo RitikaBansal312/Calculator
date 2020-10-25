@@ -18,6 +18,7 @@ function onNumClick(value) {
     console.log(value);
 }
 
+
 function onOprationClick(value) {
     
     if(total !== false){
