@@ -71,6 +71,7 @@ function totalValue() {
     screen.innerHTML = total;
 }
 
+
 //function that clear the display 
 function onClearScreen() {
     value1 = ''; // false;
