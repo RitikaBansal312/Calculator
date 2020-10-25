@@ -49,6 +49,7 @@ function onOprationClick(value) {
     }
 }
 
+
 function totalValue() {
     switch (operation) {
         case '+':
