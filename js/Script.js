@@ -78,7 +78,6 @@ function onClearScreen() {
     screen.innerHTML = "";
 }
 
-
 function onDeleteClick(){
     let privousValue = screen.innerHTML.toString();
     if(!operPressed && value1 !==''){
