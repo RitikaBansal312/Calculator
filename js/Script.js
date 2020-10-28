@@ -5,7 +5,6 @@ let operation = '+';
 let operPressed = false;
 let total = false;
 
-
 function onNumClick(value) {
     value = value.toString();
     if (operPressed) {
