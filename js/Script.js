@@ -18,17 +18,17 @@ function onNumClick(value) {
 }
 
 function onOprationClick(value) {
-    
-    if(total !== false){
+
+    if (total !== false) {
         value = value.toString();
         operPressed = true;
         operation = value;
-        value1=total;
-        value2='';
+        value1 = total;
+        value2 = '';
         let privousValue = screen.innerHTML.toString();
         screen.innerHTML = privousValue + value;
-        console.log('onOprationClick =>',total);
-    }else if(operPressed === false) {
+        console.log('onOprationClick =>', total);
+    } else if (operPressed === false) {
         value = value.toString();
         operPressed = true;
         operation = value;
@@ -78,20 +78,20 @@ function onClearScreen() {
     screen.innerHTML = "";
 }
 
-function onDeleteClick(){
+function onDeleteClick() {
     let privousValue = screen.innerHTML.toString();
-    if(!operPressed && value1 !==''){
-        const value = privousValue.substring(0,privousValue.length - 1);
+    if (!operPressed && value1 !== '') {
+        const value = privousValue.substring(0, privousValue.length - 1);
         value1 = value;
         screen.innerHTML = value;
-    }else if (operPressed && value2 !== ''){
-        const value = privousValue.substring(0,privousValue.length - 1);
-        value2 = value2.substring(0,value2.length - 1);
+    } else if (operPressed && value2 !== '') {
+        const value = privousValue.substring(0, privousValue.length - 1);
+        value2 = value2.substring(0, value2.length - 1);
         screen.innerHTML = value;
-    }else {
-        const value = privousValue.substring(0,privousValue.length - 1);
-        operPressed='';
+    } else {
+        const value = privousValue.substring(0, privousValue.length - 1);
+        operPressed = '';
         screen.innerHTML = value;
     }
-    console.log('else if =>',privousValue);
+    console.log('else if =>', privousValue);
 }
