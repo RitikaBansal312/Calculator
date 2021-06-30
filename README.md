@@ -1,2 +1,2 @@
 # Calculator
-Based on HTML, CSS and JavaScript.
+Based on HTML, CSS & JavaScript.
